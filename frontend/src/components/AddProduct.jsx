@@ -25,7 +25,7 @@ const AddProduct = () => {
 
         try {
             const response = await axios.post(
-                'http://localhost:8000/api/',
+                'http://127.0.0.1:8000/api/',
                 formField // data:formField
             )
             console.log(response.data)
