@@ -30,9 +30,12 @@ INSTALLED_APPS = [
 
     'products', # app name
     'rest_framework',
+
+    'corsheaders', # frontend + backend connection
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -111,3 +114,8 @@ STATIC_URL = 'static/'
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
+
+
+
+
+CORS_ORIGIN_WHITELIST = ['http://localhost:5173']
