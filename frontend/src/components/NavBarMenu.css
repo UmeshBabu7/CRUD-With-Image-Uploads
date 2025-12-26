@@ -14,7 +14,7 @@
 }
 
 .navbar-brand:hover {
-  color: #646cff !important;
+  color:  #282c34 !important;
 }
 
 .nav {
@@ -37,7 +37,7 @@
 .show-products-nav:hover,
 .add-product-nav:hover {
   color: #646cff;
-  background-color: rgba(100, 108, 255, 0.1);
+  background-color:  rgb(red, green, blue);
   transform: translateY(-2px);
 }
 

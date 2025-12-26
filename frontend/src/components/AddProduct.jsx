@@ -30,7 +30,7 @@ const AddProduct = () => {
             )
             console.log(response.data)
 
-            // ✅ redirect after success
+            // redirect after success
             navigate('/')
 
         } catch (error) {
@@ -44,7 +44,6 @@ const AddProduct = () => {
                 <h2 className="text-center mb-4"> Add A Product </h2>
 
                 <div className="form-group">
-                    <label>Image</label>
                     <input
                         type="file"
                         className="form-control"
@@ -64,7 +63,7 @@ const AddProduct = () => {
 
                 <div className="form-group">
                     <input
-                        type="price"
+                        type="number"
                         className="form-control form-control-lg"
                         placeholder="Enter Product Price"
                         value={price}
@@ -93,7 +92,7 @@ const AddProduct = () => {
                 </div>
 
                 <button
-                    className="btn btn-primary btn-block"
+                    className="btn btn-primary btn-block mt-4" 
                     onClick={addProductInfo}
                 >
                     Add Product 
